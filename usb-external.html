@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>USB / External Drive Isolation | Full Setup</title>
+<meta name="description" content="Step-by-step setup for isolated OS using USB / external HDD / SSD. Strongest isolation for competition."/>
+<style>
+/* same theme */
+:root{--bg:#0d1117;--panel:#161b22;--text:#e6edf3;--muted:#8b949e;--accent:#58a6ff;--ok:#2ea043;--warn:#f85149;}
+*{box-sizing:border-box} body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:linear-gradient(135deg,#0d1117,#010409);color:var(--text)}
+.container{max-width:1100px;margin:auto;padding:28px}
+nav a{color:var(--accent);text-decoration:none;margin-right:14px;font-weight:700}
+h1,h2{color:var(--accent)}
+.card{background:var(--panel);border-radius:12px;padding:22px;margin:22px 0;box-shadow:0 0 0 1px #30363d}
+.step{border-left:5px solid var(--accent)}
+.warn{border-left:5px solid var(--warn)}
+details{background:#0b1320;border-radius:10px;padding:14px;margin-top:10px}
+summary{cursor:pointer;font-weight:700}
+.small{color:var(--muted)}
+.btn{display:inline-block;padding:12px 18px;border-radius:10px;text-decoration:none;color:#fff;font-weight:700;background:linear-gradient(135deg,#238636,#2ea043)}
+footer{margin:48px 0 10px;text-align:center;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="container">
+<nav>
+  <a href="index.html">← Home</a>
+  <a href="vm.html">VM Setup</a>
+</nav>
+
+<h1>USB / External HDD / SSD — Full Isolation Setup</h1>
+
+<div class="card warn">
+<strong>Guarantees</strong>
+<ul>
+  <li>Internal disk untouched by default</li>
+  <li>User-controlled access only</li>
+  <li>Failure-safe: reboot restores state</li>
+</ul>
+</div>
+
+<div class="card step">
+<h2>Step 1 — Get the OS Image</h2>
+<p>Download the competition OS image.</p>
+<a class="btn" href="#" target="_blank">Download OS Image (.img)</a>
+<p class="small">Verify checksum if provided.</p>
+</div>
+
+<div class="card step">
+<h2>Step 2 — Choose Your Media</h2>
+<ul>
+  <li>USB (16–32GB minimum)</li>
+  <li>External HDD / SSD (recommended for speed & persistence)</li>
+</ul>
+</div>
+
+<div class="card step">
+<h2>Step 3 — Write Image to Media</h2>
+<p>Use a trusted imaging tool on your host OS.</p>
+<details>
+  <summary>Show generic guidance</summary>
+  <p>Select the downloaded image → select the correct removable drive → write/flash.</p>
+  <p class="small">Ensure you pick the removable drive, not your internal disk.</p>
+</details>
+</div>
+
+<div class="card step">
+<h2>Step 4 — Boot From External Media</h2>
+<ul>
+  <li>Reboot → open boot menu (vendor-specific key)</li>
+  <li>Select the external device</li>
+</ul>
+</div>
+
+<div class="card step">
+<h2>Step 5 — Isolation Check (Important)</h2>
+<ul>
+  <li>Internal disks should not auto-mount</li>
+  <li>Network behaves independently</li>
+  <li>Breaking changes affect only the isolated OS</li>
+</ul>
+</div>
+
+<div class="card warn">
+<strong>Rules</strong>
+<ul>
+  <li>Do not install on internal disk</li>
+  <li>Use removable media only</li>
+  <li>Arrive with this completed</li>
+</ul>
+</div>
+
+<!-- Ads -->
+<div class="card">
+<strong>Ads</strong>
+<div class="small">[AdSense placeholder]</div>
+</div>
+
+<!-- Affiliates -->
+<div class="card">
+<strong>Recommended Gear</strong>
+<ul class="small">
+  <li>[Affiliate] USB 3.1 Drive</li>
+  <li>[Affiliate] External SSD (NVMe enclosure)</li>
+</ul>
+</div>
+
+<footer>USB / External setup • Competition-safe</footer>
+</div>
+</body>
+</html>
