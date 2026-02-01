@@ -15,6 +15,37 @@
 <title>Portable Isolated OS Environment | Competition Prep</title>
 <meta name="description" content="Mandatory isolated environment setup for competition. Choose USB/External drive (recommended) or Virtual Machine. Protect your data."/>
 <style>
+  .layout {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr) 220px;
+  gap: 20px;
+}
+
+.sidebar {
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+}
+
+.ad-box {
+  background: #0b1320;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 0 0 1px #30363d;
+  color: #8b949e;
+  font-size: 0.85em;
+  text-align: center;
+}
+
+@media (max-width: 1100px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+
 :root{--bg:#0d1117;--panel:#161b22;--text:#e6edf3;--muted:#8b949e;--accent:#58a6ff;--ok:#2ea043;--warn:#f85149;}
 *{box-sizing:border-box} body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:linear-gradient(135deg,#0d1117,#010409);color:var(--text)}
 .container{max-width:1100px;margin:auto;padding:28px}
@@ -35,6 +66,18 @@ footer{margin:48px 0 10px;text-align:center;color:var(--muted)}
 </head>
 <body>
 <div class="container">
+  <div class="layout">
+
+    <!-- LEFT AD -->
+    <aside class="sidebar">
+      <div class="ad-box">
+        Left Ad Space
+      </div>
+    </aside>
+    
+<!--main content -->
+<main>
+  
 <header>
   <div><strong>Competition Prep</strong></div>
   <nav>
@@ -93,6 +136,18 @@ footer{margin:48px 0 10px;text-align:center;color:var(--muted)}
     <a class="btn alt" href="vm.html">Start VM Setup</a>
   </div>
 </div>
+</main>
+
+    <!-- RIGHT AD -->
+    <aside class="sidebar">
+      <div class="ad-box">
+        Right Ad Space
+      </div>
+    </aside>
+
+  </div>
+</div>
+
 
 <!-- Ads Placeholder -->
 <div class="card">
