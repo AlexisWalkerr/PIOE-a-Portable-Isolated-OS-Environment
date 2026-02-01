@@ -3,57 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Isolated OS Environment – Pre-Event Setup</title>
+  <title>Portable Isolated OS Environment | Pre-Event Learning</title>
 
-  <!-- SEO (helps AdSense approval later) -->
-  <meta name="description" content="Learn how to create an isolated OS environment for hacking competitions and cybersecurity labs without risking your personal data.">
+  <meta name="description" content="Learn how to use a portable isolated OS environment via USB, HDD, or SSD for secure competitions and system testing without risking personal data.">
 
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #0d1117;
-      color: #e6edf3;
       margin: 0;
-      padding: 0;
-      line-height: 1.6;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #0d1117, #010409);
+      color: #e6edf3;
     }
+
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
-      padding: 20px;
+      padding: 30px 20px;
     }
-    h1, h2, h3 {
+
+    h1 {
+      font-size: 2.2em;
       color: #58a6ff;
     }
-    .box {
-      background: #161b22;
-      padding: 15px;
-      border-left: 4px solid #58a6ff;
-      margin: 20px 0;
-      border-radius: 6px;
-    }
-    .warning {
-      border-left-color: #f85149;
-    }
-    .success {
-      border-left-color: #3fb950;
-    }
-    a.button {
-      display: inline-block;
-      background: #238636;
-      color: #ffffff;
-      padding: 12px 18px;
-      margin: 10px 0;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-    }
-    a.button:hover {
-      background: #2ea043;
-    }
-    footer {
-      text-align: center;
+
+    h2 {
       margin-top: 40px;
+      color: #79c0ff;
+    }
+
+    p {
+      font-size: 1.05em;
+      color: #c9d1d9;
+    }
+
+    .card {
+      background: #161b22;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 25px 0;
+      box-shadow: 0 0 0 1px #30363d;
+    }
+
+    .highlight {
+      border-left: 5px solid #3fb950;
+    }
+
+    .warning {
+      border-left: 5px solid #f85149;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 14px 22px;
+      background: linear-gradient(135deg, #238636, #2ea043);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(46,160,67,0.4);
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
       font-size: 0.9em;
       color: #8b949e;
     }
@@ -63,60 +89,86 @@
 <body>
   <div class="container">
 
-    <h1>🔐 Isolated OS Environment – Pre-Event Learning</h1>
+    <h1>🔐 Portable Isolated OS Environment</h1>
 
     <p>
-      Before you participate in the hacking competition, it is important
-      to understand how to work in a <strong>completely isolated operating system</strong>.
-      This ensures your <strong>personal data, files, and accounts remain safe</strong>.
+      This page prepares you for the upcoming competition by teaching how to work
+      inside a <strong>fully isolated operating system</strong> that runs independently
+      from your personal data and main OS.
     </p>
 
-    <div class="box warning">
-      <strong>Why this matters:</strong><br>
-      During hacking or security testing, tools may request high privileges.
-      Running them on your personal OS can risk data leakage or system damage.
+    <div class="card warning">
+      <strong>Why isolation is mandatory in this competition:</strong>
+      <p>
+        Security tools often require elevated permissions and aggressive system access.
+        Running them on your personal OS can risk data exposure or system instability.
+      </p>
     </div>
 
-    <h2>🧠 What We Will Teach You</h2>
-    <ul>
-      <li>How to create your own isolated OS environment</li>
-      <li>How isolation protects your personal data</li>
-      <li>How professionals test systems safely</li>
-      <li>How to use the environment on any PC, laptop, or server</li>
-    </ul>
+    <h2>🧠 What You Will Learn Here</h2>
 
-    <h2>🧪 What This OS Image Provides</h2>
-    <ul>
-      <li>Pre-configured isolated environment</li>
-      <li>No access to your host system data</li>
-      <li>Safe for hacking practice & experiments</li>
-      <li>Designed for competitions & labs</li>
-    </ul>
-
-    <div class="box success">
-      <strong>Peace of mind:</strong><br>
-      Even if something breaks inside the isolated OS, your real system stays untouched.
+    <div class="card">
+      <ul>
+        <li>How isolated environments protect your personal files</li>
+        <li>Why professionals never test on their main OS</li>
+        <li>How competitions safely allow offensive & defensive testing</li>
+        <li>How to prepare your system before arriving at the event</li>
+      </ul>
     </div>
 
-    <h2>⬇️ Download & Preparation</h2>
-    <p>
-      Download the OS image and follow the setup guide before the event.
-      This will save time and ensure everyone starts equally.
-    </p>
+    <h2>💾 Isolation Using USB / HDD / SSD</h2>
 
-    <!-- Replace links later -->
-    <a class="button" href="#" target="_blank">Download OS Image (.img)</a><br>
-    <a class="button" href="#" target="_blank">Installation & Setup Guide</a>
+    <div class="card highlight">
+      <p>
+        The isolated environment you will use is <strong>not installed</strong> on your main system.
+        It runs from:
+      </p>
+      <ul>
+        <li>Bootable USB drive</li>
+        <li>External Hard Drive</li>
+        <li>External SSD</li>
+      </ul>
 
-    <h2>⚠️ Important Instructions</h2>
-    <ul>
-      <li>Do NOT install this OS on your main system</li>
-      <li>Use it only in an isolated environment (VM / test machine)</li>
-      <li>Bring the setup completed before the event</li>
-    </ul>
+      <p>
+        Your internal disks remain untouched unless you explicitly allow access.
+        This guarantees safety even during advanced testing.
+      </p>
+    </div>
+
+    <h2>🧪 What This Environment Provides</h2>
+
+    <div class="card">
+      <ul>
+        <li>Complete separation from host OS</li>
+        <li>Consistent environment for all participants</li>
+        <li>Safe execution of competition tools</li>
+        <li>Recoverable system — break it, reboot, continue</li>
+      </ul>
+    </div>
+
+    <h2>⬇️ Required Files</h2>
+
+    <div class="card">
+      <p>
+        Download the OS image and preparation material before the event.
+        Instructions will be explained live, but pre-setup is strongly recommended.
+      </p>
+
+      <a class="button" href="#" target="_blank">Download OS Image (.img)</a><br><br>
+      <a class="button" href="#" target="_blank">Preparation PDF (Guide)</a>
+    </div>
+
+    <div class="card warning">
+      <strong>Important Rules:</strong>
+      <ul>
+        <li>Do not install this OS on your internal drive</li>
+        <li>Use only removable media (USB / HDD / SSD)</li>
+        <li>Arrive with the environment ready</li>
+      </ul>
+    </div>
 
     <footer>
-      © Pre-Event Training • Built for secure learning<br>
+      Pre-Event Learning Resource • Designed for safe competition environments<br>
       No personal data is collected from this page
     </footer>
 
